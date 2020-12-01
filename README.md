@@ -17,5 +17,12 @@ This was also repeated with lower and higher nodes and epochs combinations.
 ### Experiment 3
 For the third experiment  the training function was changed from traincsg to traingd and traingdm. Which were optimizers using grading descent and gradient decent with momentum. They both performed worse than traincsg. This is likely due to learning rate and momentum constant parameters not being optimized. however traingd performed better with classifiers set to  node 32 and epoch 32, with traingdm performing better at lower node and epoch combinations. 
 
+### Overall Conclusions
+Overall the conclusions derived were that from Experiment 1, node 8 and epoch 8 performed the best on the test dataset. There was major overfitting at later epochs 
+
+From experiment 2, at node 2 & epoch 4, an ensemble size of 13 performed the best. At node 8 & epoch 8 and node 32 & epoch 32, ensemble size 21 performed the best. Also classifiers with higher node and epochs performed better.
+
+From experiment 3, we uncovered that the traincsg function performed much better than the tested traingd and traingdm functions with traingdm performing better at lower node and epoch combinations and traingd performing marginally better at node and epoch combination 32. This was likely due to the learning rate and momentum constant parameters not being optimized and future experiments should test these parameters.
+
 
 
